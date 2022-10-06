@@ -365,11 +365,11 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "_1validator_scanner.l"
+#line 1 "scanner.l"
 #define INITIAL 0
-#line 2 "_1validator_scanner.l"
+#line 2 "scanner.l"
     #include <stdio.h>
-    #include "_1validator_parser.h";
+    #include "parser.h"
 #line 374 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
@@ -521,7 +521,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 10 "_1validator_scanner.l"
+#line 9 "scanner.l"
 
 #line 527 "lex.yy.c"
 
@@ -608,62 +608,62 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "_1validator_scanner.l"
-{return TOKEN_INT;}
+#line 10 "scanner.l"
+{yylval = atoi(yytext); return TOKEN_INT;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "_1validator_scanner.l"
+#line 11 "scanner.l"
 {return TOKEN_PLUS;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "_1validator_scanner.l"
+#line 12 "scanner.l"
 {return TOKEN_MINUS;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "_1validator_scanner.l"
+#line 13 "scanner.l"
 {return TOKEN_MUL;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 "_1validator_scanner.l"
+#line 14 "scanner.l"
 {return TOKEN_DIV;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 16 "_1validator_scanner.l"
+#line 15 "scanner.l"
 {return TOKEN_LPAREN;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 17 "_1validator_scanner.l"
+#line 16 "scanner.l"
 {return TOKEN_RPAREN;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 18 "_1validator_scanner.l"
+#line 17 "scanner.l"
 {return TOKEN_SEMI;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 19 "_1validator_scanner.l"
+#line 18 "scanner.l"
 {}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 20 "_1validator_scanner.l"
+#line 19 "scanner.l"
 {return 0;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 21 "_1validator_scanner.l"
+#line 20 "scanner.l"
 {return TOKEN_ERROR;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 22 "_1validator_scanner.l"
+#line 21 "scanner.l"
 ECHO;
 	YY_BREAK
 #line 670 "lex.yy.c"
@@ -1552,7 +1552,8 @@ int main()
 	return 0;
 	}
 #endif
-#line 22 "_1validator_scanner.l"
+#line 21 "scanner.l"
 
 
-int yywrap(){return 0;}
+int yywrap() {return 0;}
+
