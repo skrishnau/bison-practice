@@ -1,6 +1,6 @@
 %{
     #include <stdio.h>
-    #include "_1validator_parser.h";
+    #include "parser.h";
 %}
 
 

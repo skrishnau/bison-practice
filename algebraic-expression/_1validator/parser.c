@@ -68,13 +68,13 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 189 of yacc.c  */
-#line 1 "_1validator_parser.y"
+#line 1 "parser.y"
 
     #include <stdio.h>
 
 
 /* Line 189 of yacc.c  */
-#line 78 "_1validator_parser.c"
+#line 78 "parser.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -127,7 +127,7 @@ typedef int YYSTYPE;
 
 
 /* Line 264 of yacc.c  */
-#line 131 "_1validator_parser.c"
+#line 131 "parser.c"
 
 #ifdef short
 # undef short
@@ -1322,7 +1322,7 @@ yyreduce:
       
 
 /* Line 1455 of yacc.c  */
-#line 1326 "_1validator_parser.c"
+#line 1326 "parser.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1534,7 +1534,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 30 "_1validator_parser.y"
+#line 30 "parser.y"
 
 
 
